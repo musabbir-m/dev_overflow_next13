@@ -2,6 +2,7 @@ import React from 'react'
 import './globals.css'
 import { Inter, Space_Grotesk } from 'next/font/google'
 import type { Metadata } from 'next'
+import { ClerkProvider, SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 
 
 const inter = Inter({ subsets: ['latin'] })
