@@ -1,10 +1,19 @@
-import { ClerkProvider } from "@clerk/nextjs";
-import "./globals.css";
-import React from "react";
+import React from 'react'
+import './globals.css'
+import { Inter, Space_Grotesk } from 'next/font/google'
+import type { Metadata } from 'next'
 
-export const metadata = {
-  title: "Next JS 13 with Clerk",
-};
+
+const inter = Inter({ subsets: ['latin'] })
+
+export const metadata: Metadata = {
+  title: 'DevFlow',
+  description: 'A network of developers',
+  icons: {
+    icon: '/assets/images/site-logo.svg'
+  }
+}
+
 export default function RootLayout({
   children,
 }: {
